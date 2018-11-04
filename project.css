@@ -1,3 +1,15 @@
+
+/* Remove the default margin and padding around the <html> and <body> */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+    border: 0;
+    outline: 0;
+}
+
+
+
 /* design for the navigation bar */
 
 ul {
@@ -13,22 +25,72 @@ a:link {
 }
 
 a:hover {
-	color: grey;
+	background-color: grey;
 }
 
 
 li a {
 	display: block;
 	font-size: 20px;
+	color: white;
 }
 
 /* background color */
 body {
-	background-color: #17252A
+	background-color: #17252A;
 }
 
 
 h1 {
 	font-family: Arial;
-	color: white;
+	text-align: center;
 }
+
+
+
+			.column {
+				float: left;
+			}
+
+			/* Clear floats after the columns */
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		
+			.side-menu {
+				width: 20%;
+				min-height: 100vh;
+			}
+			
+			.side-menu li {
+				border-bottom: 1px solid gray;
+				border-top: 1px solid gray;
+			}
+			
+			.side-menu li a {
+				padding: 15px;
+			}
+			
+			
+			
+			.content {
+				width: 80%;
+				min-height: 100vh;
+				background-color: white;
+				display: inline-block;
+				color: black;				
+			}
+			
+			.content p {
+				padding-left: 20%;
+				padding-right: 20%;
+			}
+
+
+
+
+
+
+
