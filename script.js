@@ -18,3 +18,5 @@ function ToggleMenu() {
 		menu.style.display = 'none';
 	}
 }
+
+
