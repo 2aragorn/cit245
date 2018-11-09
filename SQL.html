@@ -1,32 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
-   <title>SQL</title>
-   <link href="project.css" rel="stylesheet" />
+		<title>Programming Languages</title>
+		<link href="project.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="script.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js" defer></script>
+		
+		<script>		
+
+			document.addEventListener("DOMContentLoaded", function() {
+				var editor = ace.edit("editor");
+				editor.setTheme("ace/theme/dracula");
+				editor.session.setMode("ace/mode/sql");
+			});
+			
+		</script>
+		
    </head>
    <body>
-   <h1>SQL</h1>
-   <ul>
-      <li><a href="C++.html">C++</a></li>
-	  <li><a href="PHP.html">PHP</a></li>
-	  <li><a href="Javascript.html">Javascript</a></li>
-	  <li><a href="SQL.html">SQL</a></li>
-	  <li><a href="LanguagesTable.html">Languages Table</a></li>
-   </ul>
-   <p>SQL (Structured Query Language) is a programming language exclusively used in databases
+		<img src="webpageHeader.jpg">
+   
+		<div class="row">
+					
+			<div class="column side-menu">
+				<ul>
+					<li>
+						<a href="#" class="hamburger_menu">
+							<div class="hamburger">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div> 
+							Menu
+						</a>
+					</li>
+				</ul>
+				
+				<ul class="pages">
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="C++.html">C++</a></li>
+					<li><a href="PHP.html">PHP</a></li>
+					<li><a href="Javascript.html">JavaScript</a></li>
+					<li><a href="SQL.html" class="active">SQL</a></li>
+					<li><a href="summary.html">Summary</a></li>
+			   </ul>
+			</div>
+			
+			
+			
+			
+			<div class="column content">
+				<p>
+					<h1>SQL (Structured Query Language)</h1>
+				</p>
+				
+				<p>
+					SQL (Structured Query Language) is a programming language exclusively used in databases
    that was developed in the 1970s at IBM. Unlike most other languages that are versatile and
    can be used for multiple purposes, SQL is a specialized language that is used exclusively 
    for manipulating data within databases. There is no outside use for the SQL language apart
    from databases.
 
-   </p>
-   <h2>Code Example</h2>
-   <p>#include <iostream>
+				</p>
+				
+				<p>
+					<h1>Code Example</h1>
+				</p>
+				
+				<div class="center">
+<div id="editor">
 
-int main()
-{
-    std::cout << "Hello, world!\n";
-}
-</p>
+
+	SELECT
+		*
+	FROM
+		`table_name`
+	WHERE
+		`table_name`.`table_column` = "value"
+	GROUP BY
+		`table_name`.`table_column`
+	ORDER BY
+		`table_name`.`table_ID`;
+
+</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	   
+	   
    </body>
-   </html>
+   <footer class="footer">
+		Cliff Bailey & Lucas McCollum
+   </footer>
+   
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
