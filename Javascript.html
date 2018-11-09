@@ -1,29 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
-   <title>Programming Languages</title>
-   <link href="project.css" rel="stylesheet" />
+		<title>Programming Languages</title>
+		<link href="project.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="script.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js" defer></script>
+		
+		<script>		
+
+			document.addEventListener("DOMContentLoaded", function() {
+				var editor = ace.edit("editor");
+				editor.setTheme("ace/theme/dracula");
+				editor.session.setMode("ace/mode/javascript");
+			});
+			
+		</script>
+		
    </head>
    <body>
-   <h1> Javascript</h1>
-   <ul>
-      <li><a href="C++.html">C++</a></li>
-	  <li><a href="PHP.html">PHP</a></li>
-	  <li><a href="Javascript.html">Javascript</a></li>
-	  <li><a href="SQL.html">SQL</a></li>
-	  <li><a href="LanguagesTable.html">Languages Table</a></li>
-   </ul>
-   <p>JavaScript (or JS) is an interpreted language that was developed in 1995 by Netscape to add interactivity to static web pages.
+		<img src="webpageHeader.jpg">
+   
+		<div class="row">
+					
+			<div class="column side-menu">
+				<ul>
+					<li>
+						<a href="#" class="hamburger_menu">
+							<div class="hamburger">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div> 
+							Menu
+						</a>
+					</li>
+				</ul>
+				
+				<ul class="pages">
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="C++.html">C++</a></li>
+					<li><a href="PHP.html">PHP</a></li>
+					<li><a href="Javascript.html" class="active">JavaScript</a></li>
+					<li><a href="SQL.html">SQL</a></li>
+					<li><a href="summary.html">Summary</a></li>
+			   </ul>
+			</div>
+			
+			
+			
+			
+			<div class="column content">
+				<p>
+					<h1>JavaScript</h1>
+				</p>
+				
+				<p>
+					JavaScript (or JS) is an interpreted language that was developed in 1995 by Netscape to add interactivity to static web pages.
    It’s name is misleading as it only shares a similar C-style syntax with Java and is not actually a derivative of the Java language.
    JavaScript remains an integral part of web browsers but has also been expanded to run on servers as NodeJS and on client devices 
    through wrappers such as Electron.
 
-   </p>
-   <h2>Code Example</h2>
-   <p>
-   "<script>"
-    alert( 'Hello, world!' );
-	"</script>"
-</p>
+				</p>
+				
+				<p>
+					<h1>Code Example</h1>
+				</p>
+				
+				<div class="center">
+<div id="editor">
+
+
+alert( 'Hello, world!' );
+
+
+</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	   
+	   
    </body>
-    </html>
+   <footer class="footer">
+		Cliff Bailey & Lucas McCollum
+   </footer>
+   
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
