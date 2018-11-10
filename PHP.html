@@ -13,6 +13,16 @@
 				var editor = ace.edit("editor");
 				editor.setTheme("ace/theme/dracula");
 				editor.session.setMode("ace/mode/php");
+				
+				var code = '\r\n\r\n';			
+				code += '<';
+				code += '?php ' + '\r\n';
+				code += '	for ($x = 0; $x <= 10; $x++) {' + '\r\n';
+				code += '		echo "The number is: $x <br>";' + '\r\n';
+				code += '	}' + '\r\n';
+				code += '?>' + '\r\n\r\n';
+				
+				editor.session.setValue(code);
 			});
 			
 		</script>
@@ -72,21 +82,7 @@
 
 
 
-function nfact($n) {
-    if ($n == 0) {
-        return 1;
-    }
-    else {
-        return $n * nfact($n - 1);
-    }
-}
 
-echo "\n\nPlease enter a whole number ... ";
-$num = trim(fgets(STDIN));
-
-// ===== PROCESS - Determing the factorial of the input number =====
-$output = "\n\nFactorial " . $num . " = " . nfact($num) . "\n\n";
-echo $output;
 
 
 
